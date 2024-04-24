@@ -1,0 +1,117 @@
+.container-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #8c8c8c8c;
+}
+
+.todo-input {
+  display: flex;
+  font-size: 1.1rem;
+  height: 2.5rem;
+  width: 100%;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+}
+
+.todo-input:read-only {
+  opacity: 0.7;
+}
+
+.todo-input:focus-visible {
+  outline: none;
+}
+
+.todo-input:disabled {
+  pointer-events: none;
+}
+
+.tools {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.competed-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.competed-checkbox input[type='checkbox'] {
+  display: none;
+}
+
+.competed-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.competed-checkbox .checkmark::before {
+  content: '\2713';
+  font-size: 16px;
+  color: transparent;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.competed-checkbox input[type='checkbox']:checked + .checkmark {
+  background-color: #333;
+  border-color: #333;
+}
+
+.competed-checkbox input[type='checkbox']:checked + .checkmark::before {
+  color: #fff;
+}
+
+.competed-checkbox:hover {
+  color: #666;
+}
+
+.competed-checkbox:hover .checkmark {
+  border-color: #666;
+  background-color: #f0f0f0;
+}
+
+.competed-checkbox input[type='checkbox']:focus + .checkmark {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.competed-checkbox .checkmark,
+.competed-checkbox input[type='checkbox']:checked + .checkmark {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s,
+    transform 0.3s;
+}
+
+.button {
+  border-radius: 0.375rem;
+  display: inline-flex;
+  padding: 1em 1em;
+  align-items: center;
+  background-color: black;
+  border: none;
+  color: white;
+  transform: translateX(-0.25rem);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.button:active,
+.button:hover {
+  background-color: rgb(26, 26, 26);
+}

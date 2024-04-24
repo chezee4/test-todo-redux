@@ -1,0 +1,35 @@
+.tab-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.tab {
+  position: relative;
+  font-size: 1.05rem;
+  width: 50%;
+  font-weight: 600;
+  color: rgb(82, 82, 82);
+  text-align: center;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.tab:hover {
+  color: rgb(0, 0, 0);
+}
+
+.active {
+  color: rgb(0, 0, 0);
+}
+.active::before {
+  content: ' ';
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(38, 38, 38);
+}
