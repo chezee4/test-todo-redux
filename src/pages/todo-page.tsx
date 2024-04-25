@@ -1,4 +1,4 @@
-import InputTodo from 'src/components/input-todo'
+import InputTodo from 'src/components/input-todo/input-todo'
 import TodoList from 'src/feature/todo-list/todo-list'
 import Wrapper from 'src/layout/wrapper/wrapper'
 import styles from 'src/pages/pages.module.css'

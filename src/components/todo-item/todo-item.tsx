@@ -12,7 +12,7 @@ import styles from 'src/components/todo-item/todo-item.module.css'
 
 type TodoItemProps = Todo & {}
 
-export const TodoItem: React.FC<TodoItemProps> = ({
+const TodoItem: React.FC<TodoItemProps> = ({
   id,
   text,
   deleted,
@@ -83,3 +83,5 @@ export const TodoItem: React.FC<TodoItemProps> = ({
     </div>
   )
 }
+
+export default TodoItem
