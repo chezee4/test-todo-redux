@@ -3,8 +3,8 @@ import todoReducer from 'src/redux/reducer'
 
 export const store = configureStore({
   reducer: {
-    todos: todoReducer,
-  },
+    todos: todoReducer
+  }
 })
 
 export type RootState = ReturnType<typeof store.getState>

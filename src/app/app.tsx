@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className='App'>
       <Wrapper>
-      <Header />
+        <Header />
         <Outlet />
       </Wrapper>
     </div>

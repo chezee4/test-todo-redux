@@ -10,7 +10,7 @@ import {
 import { Todo } from 'src/types'
 import styles from 'src/components/todo-item/todo-item.module.css'
 
-type TodoItemProps = Todo & {}
+type TodoItemProps = Todo
 
 const TodoItem: React.FC<TodoItemProps> = ({
   id,
